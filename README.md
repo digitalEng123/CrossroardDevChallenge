@@ -4,9 +4,10 @@ Crossroard Developer Challenge
 
 Build & Update NodeJs, Angular Packages
 ---------------------------------
-1. Open Command Prompt Naviaget to root folder (see) below:
-  Root Folder: .....\AspMvcWarnerMedia\AspMvcWarnerMedia\Client
-2. Execute Command: ng update
+1. Open Command Prompt Navigate to root folder (see) below:
+  Root Folder: .....\AspMvcWarnerMedia\AspMvcWarnerMedia\Client\
+  Example Prompt: C:\AspMvcWarnerMedia\AspMvcWarnerMedia\Client\>
+2. Execute Command: 'ng update'
 
 
 Restore ASP Mvc Solution Packages:
