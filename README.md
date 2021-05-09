@@ -20,9 +20,11 @@ Restore ASP Mvc Solution Packages:
 Change Database Connection String:
 ---------------------------------
 1. Goto web config 'connectionStrings' section, and modify the 'TitlesEntities' connection
+
 &lt;connectionStrings&gt;
     &lt;add name=&quot;TitlesEntities&quot; connectionString=&quot;metadata=res://*/Data.MsSql.TitlesModel.csdl|res://*/Data.MsSql.TitlesModel.ssdl|res://*/Data.MsSql.TitlesModel.msl;provider=System.Data.SqlClient;provider connection string=&amp;quot;data source=(LocalDB)\MSSQLLocalDB;initial catalog=Titles;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&amp;quot;&quot; providerName=&quot;System.Data.EntityClient&quot; /&gt;
   &lt;/connectionStrings&gt;
+  
 2. Modify 'Data Source' to point to the Db Server where the Title Database is hosted.
 
 
