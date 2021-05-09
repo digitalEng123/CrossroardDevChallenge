@@ -1,0 +1,67 @@
+
+
+<div class="d-flex flex-row bd-highlight mb-3">
+
+  <div class="form-froup row" style="width: 70%;">
+
+    <div class="control-group">
+      <label class="col-sm-4 col-form-label">Title:</label>
+      <div class="col-sm-6">
+        <label class="col-form-label">{{objTitle.titleName}}</label>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="col-sm-4 col-form-label">Released:</label>
+      <div class="col-sm-6">
+        <label class="col-form-label">{{objTitle.releaseYear}}</label>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="col-sm-4 col-form-label"># Awards:</label>
+      <div class="col-sm-6">
+        <label class="col-form-label">{{AwardsCount}}</label>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="col-sm-4 col-form-label"># Participants:</label>
+      <div class="col-sm-6">
+        <label class="col-form-label">{{ParticipateCount}}</label>
+      </div>
+    </div>
+
+    <label class="col-sm-4 col-form-label">Genre:</label>
+    <div class="col-sm-6">
+      <table>
+        <tr *ngFor="let dataItem of TitleGenreList">
+          <td>{{dataItem.name}}</td>
+        </tr>
+      </table>
+    </div>
+
+    <label class="col-sm-4 col-form-label">Other Names:</label>
+    <div class="col-sm-8">
+      <table>
+        <tr *ngFor="let dataItem of TitleOtherNamesList | callback: FilterTitle: TitleName">
+          <td>{{dataItem.titleName}}</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+  <div class="ml-3 bd-highlight" style="width: 90%;">
+
+    <label class="col-form-label">Story Line:</label>
+
+    <p *ngFor="let dataItem of TitleStoryLineList">
+      <span class="border border-info rounded">
+        {{dataItem.description}}
+      </span>
+    </p>
+
+  </div>
+
+</div>

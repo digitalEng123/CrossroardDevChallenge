@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Crossroads Demo App</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link rel="stylesheet" href="~/Scripts/client/styles.css">
+
+    <!-- Required: Used to specify the default Root Folder -->
+    <!--<base href="/">-->
+
+</head>
+<body>
+
+    <div class="container body-content">
+                
+        @RenderBody()
+
+        <script src="~/Scripts/client/runtime.js" defer></script>
+        <script src="~/Scripts/client/polyfills.js" defer></script>
+        <script src="~/Scripts/client/vendor.js" defer></script>
+        <script src="~/Scripts/client/main.js" defer></script>
+
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Crossroads Demo App</p>
+        </footer>
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
