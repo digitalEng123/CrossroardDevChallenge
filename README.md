@@ -20,7 +20,9 @@ Restore ASP Mvc Solution Packages:
 Change Database Connection String:
 ---------------------------------
 1. Goto web config 'connectionStrings' section, and modify the 'TitlesEntities' connection
-  %3CconnectionStrings%3E%0A%20%20%20%20%3Cadd%20name%3D%22TitlesEntities%22%20connectionString%3D%22metadata%3Dres%3A%2F%2F%2A%2FData.MsSql.TitlesModel.csdl%7Cres%3A%2F%2F%2A%2FData.MsSql.TitlesModel.ssdl%0A%20%20%20%20%20%20%7Cres%3A%2F%2F%2A%2FData.MsSql.TitlesModel.msl%3Bprovider%3DSystem.Data.SqlClient%3Bprovider%20connection%20string%3D%26quot%3Bdata%20source%3D%28LocalDB%29%5CMSSQLLocalDB%3B%0A%20%20%20%20%20%20initial%20catalog%3DTitles%3Bintegrated%20security%3DTrue%3BMultipleActiveResultSets%3DTrue%3BApp%3DEntityFramework%26quot%3B%22%20providerName%3D%22System.Data.EntityClient%22%20%2F%3E%0A%20%20%3C%2FconnectionStrings%3E
+&lt;connectionStrings&gt;
+    &lt;add name=&quot;TitlesEntities&quot; connectionString=&quot;metadata=res://*/Data.MsSql.TitlesModel.csdl|res://*/Data.MsSql.TitlesModel.ssdl|res://*/Data.MsSql.TitlesModel.msl;provider=System.Data.SqlClient;provider connection string=&amp;quot;data source=(LocalDB)\MSSQLLocalDB;initial catalog=Titles;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&amp;quot;&quot; providerName=&quot;System.Data.EntityClient&quot; /&gt;
+  &lt;/connectionStrings&gt;
 2. Modify 'Data Source' to point to the Db Server where the Title Database is hosted.
 
 
