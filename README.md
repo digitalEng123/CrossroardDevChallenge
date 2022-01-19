@@ -1,6 +1,6 @@
 # CrossroardDevChallenge
 
-Crossroard Developer Challenge
+Crossroard Developer Challenge - Coding Test
 
 
 Author
