@@ -3,6 +3,17 @@
 Crossroard Developer Challenge
 
 
+Author
+-----------------------------------
+Willie Johnson Jr
+
+
+Project Requirements
+------------------------------------
+1. Crossroad Dev Test_00001.png
+2. Developer Challenge.pdf
+
+
 Build & Update NodeJs, Angular Packages
 ---------------------------------
 1. Open Command Prompt Navigate to root folder (see) below:
