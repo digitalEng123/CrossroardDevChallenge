@@ -1,5 +1,4 @@
 # CrossroardDevChallenge
-Grace N.
 
 Crossroard Developer Challenge
 
